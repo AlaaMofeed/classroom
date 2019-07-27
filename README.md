@@ -258,6 +258,7 @@ We strongly encourage you to use [https://classroom.github.com](https://classroo
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
 and if you would like to deploy on Azure.
+
 [![Deploy to Azure](http://azuredeploy.net/deploybutton.png)](https://azuredeploy.net/?repository=https://github.com/AlaaMofeed/classroom)
 
 
