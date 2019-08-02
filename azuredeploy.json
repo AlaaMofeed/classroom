@@ -61,7 +61,7 @@
       "GITHUB_CLIENT_ID": "[parameters('GITHUB_CLIENT_ID')]",
       "GITHUB_CLIENT_SECRET": "[parameters('GITHUB_CLIENT_SECRET')]",
       "NON_STAFF_GITHUB_ADMIN_IDS": "[parameters('NON_STAFF_GITHUB_ADMIN_IDS')]",
-      "GOOGLE_CLIENT_ID": "[parameters('GOOGLE_CLIENT_ID')]"
+      "GOOGLE_CLIENT_ID": "[parameters('GOOGLE_CLIENT_ID')]",
       "GOOGLE_CLIENT_SECRET": "[parameters('GOOGLE_CLIENT_SECRET')]"
   },
   "resources": [
