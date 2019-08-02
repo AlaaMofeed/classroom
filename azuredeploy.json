@@ -55,6 +55,15 @@
       "type": "string"
     }
   },
+  "variables":
+  {
+      "CLASSROOM_WEBHOOK_URL_PREFIX": "[parameters('CLASSROOM_WEBHOOK_URL_PREFIX')]",
+      "GITHUB_CLIENT_ID": "[parameters('GITHUB_CLIENT_ID')]",
+      "GITHUB_CLIENT_SECRET": "[parameters('GITHUB_CLIENT_SECRET')]",
+      "NON_STAFF_GITHUB_ADMIN_IDS": "[parameters('NON_STAFF_GITHUB_ADMIN_IDS')]",
+      "GOOGLE_CLIENT_ID": "[parameters('GOOGLE_CLIENT_ID')]"
+      "GOOGLE_CLIENT_SECRET": "[parameters('GOOGLE_CLIENT_SECRET')]"
+  },
   "resources": [
     {
       "apiVersion": "2014-06-01",
@@ -96,26 +105,6 @@
               {
                 "name": "CLASSROOM_WEBHOOK_URL_PREFIX",
                 "value": "[parameters('CLASSROOM_WEBHOOK_URL_PREFIX')]"
-              },
-              {
-                "name": "GITHUB_CLIENT_ID",
-                "value": "[parameters('GITHUB_CLIENT_ID')]"
-              },
-              {
-                "name": "GITHUB_CLIENT_SECRET",
-                "value": "[parameters('GITHUB_CLIENT_SECRET')]"
-              },
-              {
-                "name": "NON_STAFF_GITHUB_ADMIN_IDS",
-                "value": "[parameters('NON_STAFF_GITHUB_ADMIN_IDS')]"
-              },
-              {
-                "name": "GOOGLE_CLIENT_ID",
-                "value": "[parameters('GOOGLE_CLIENT_ID')]"
-              },
-              {
-                "name": "GOOGLE_CLIENT_SECRET",
-                "value": "[parameters('GOOGLE_CLIENT_SECRET')]"
               }
             ]
           }
