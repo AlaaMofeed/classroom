@@ -30,13 +30,22 @@
       ],
       "defaultValue": "0"
     },
-    "sqlServerName": {
+    "CLASSROOM_WEBHOOK_PREFIX_URL": {
       "type": "string"
     },
-    "sqlAdministratorLogin": {
+    "GITHUB_CLIENT_ID": {
       "type": "string"
     },
-    "sqlAdministratorPassword": {
+    "GITHUB_CLIENT_SECRET": {
+      "type": "securestring"
+    },
+    "NON_STAFF_GITHUB_ADMIN_IDS": {
+      "type": "securestring"
+    },
+    "GOOGLE_CLIENT_ID": {
+      "type": "securestring"
+    },
+    "GOOGLE_CLIENT_SECRET": {
       "type": "securestring"
     },
     "repoUrl": {
