@@ -91,31 +91,31 @@
           "dependsOn": [
             "[concat('Microsoft.Web/Sites/', parameters('siteName'))]"
           ],
-          properties: {
-            env: [
+          "properties": {
+            "env": [
               {
-                name: "CLASSROOM_WEBHOOK_URL_PREFIX",
-                value: "[parameters('CLASSROOM_WEBHOOK_URL_PREFIX')]"
+                "name": "CLASSROOM_WEBHOOK_URL_PREFIX",
+                "value": "[parameters('CLASSROOM_WEBHOOK_URL_PREFIX')]"
               },
               {
-                name: "GITHUB_CLIENT_ID",
-                value: "[parameters('GITHUB_CLIENT_ID')]"
+                "name": "GITHUB_CLIENT_ID",
+                "value": "[parameters('GITHUB_CLIENT_ID')]"
               },
               {
-                name: "GITHUB_CLIENT_SECRET",
-                value: "[parameters('GITHUB_CLIENT_SECRET')]"
+                "name": "GITHUB_CLIENT_SECRET",
+                "value": "[parameters('GITHUB_CLIENT_SECRET')]"
               },
               {
-                name: "NON_STAFF_GITHUB_ADMIN_IDS",
-                value: "[parameters('NON_STAFF_GITHUB_ADMIN_IDS')]"
+                "name": "NON_STAFF_GITHUB_ADMIN_IDS",
+                "value": "[parameters('NON_STAFF_GITHUB_ADMIN_IDS')]"
               },
               {
-                name: "GOOGLE_CLIENT_ID",
-                value: "[parameters('GOOGLE_CLIENT_ID')]"
+                "name": "GOOGLE_CLIENT_ID",
+                "value": "[parameters('GOOGLE_CLIENT_ID')]"
               },
               {
-                name: "GOOGLE_CLIENT_SECRET",
-                value: "[parameters('GOOGLE_CLIENT_SECRET')]"
+                "name": "GOOGLE_CLIENT_SECRET",
+                "value": "[parameters('GOOGLE_CLIENT_SECRET')]"
               }
             ]
           }
