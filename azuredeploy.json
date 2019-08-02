@@ -30,7 +30,7 @@
       ],
       "defaultValue": "0"
     },
-    "CLASSROOM_WEBHOOK_PREFIX_URL": {
+    "CLASSROOM_WEBHOOK_URL_PREFIX": {
       "type": "string"
     },
     "GITHUB_CLIENT_ID": {
