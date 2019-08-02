@@ -118,8 +118,8 @@
             "[concat('Microsoft.Web/Sites/', parameters('siteName'), '/config/web')]"
           ],
           "properties": {
-            "RepoUrl": "[parameters('repoUrl')]",
-            "branch": "[parameters('branch')]",
+            "RepoUrl": "https://github.com/education/classroom",
+            "branch": "master",
             "IsManualIntegration": true
           }
         }
