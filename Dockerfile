@@ -13,18 +13,17 @@ RUN curl -sL https://deb.nodesource.com/setup_9.x | bash - \
 
 RUN npm install -g yarn
 
-ARG DEV_USER
-ARG DEV_USER_ID
-RUN useradd -u $DEV_USER_ID -m -r $DEV_USER && \
-  echo "$DEV_USER ALL=(ALL) NOPASSWD: ALL" > /etc/sudoers
-USER $DEV_USER
+
+RUN useradd -u alaa -m -r alaa && \
+  echo "alaa ALL=(ALL) NOPASSWD: ALL" > /etc/sudoers
+USER alaa
 
 # rbenv
 RUN git clone https://github.com/rbenv/rbenv.git ~/.rbenv
 RUN cd ~/.rbenv && src/configure && make -C src
 
 ENV TERM xterm
-ENV PATH="/home/$DEV_USER/.rbenv/bin:$PATH"
+ENV PATH="/home/alaa/.rbenv/bin:$PATH"
 ENV RBENV_SHELL=sh
 
 # ruby-build
