@@ -34,3 +34,11 @@ services:
     volumes:
       - ~/.docker-volumes/education/classroom/redis/data/:/var/lib/redis
       - ~/.docker-volumes/education/classroom/redis/logs/:/var/log/redis
+  workspace:
+    build:
+      context: ..
+      dockerfile: .docker/Dockerfile
+      args:
+        - DEV_USER="postgres"
+        - DEV_USER_ID="postgres_id"
+        
